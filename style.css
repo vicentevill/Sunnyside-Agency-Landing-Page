@@ -187,16 +187,15 @@ h1 {
 
 .cherry-orange {
   grid-template-columns: 1fr 1fr;
-  height: 80vh;
 }
 
 .cherry-orange__half {
-  padding: 25rem 20% 20% 20%;
+  padding: 25rem 20% 10% 20%;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .cherry-orange__cherry {
@@ -209,4 +208,83 @@ h1 {
 
 .cherry-orange__heading {
   padding: 0 0 1rem 0;
+}
+
+.testimonials {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+}
+
+.testimonials__heading {
+  padding: 0 0 2rem 0;
+  color: #83828a;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.testimonials__wrapper {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.testimonials__testimony {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.testimonials__image {
+  width: 4rem;
+  border-radius: 4rem;
+}
+
+.testimonials__paragraph {
+  padding: 1rem 0;
+  color: #606368;
+}
+
+.testimonials__name {
+  font-size: 1.2rem;
+  color: #253340;
+}
+
+.testimonials__title {
+  font-size: 0.8rem;
+  color: #83828a;
+}
+
+.image-group {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0 3rem 0;
+  background: #90d4c5;
+}
+
+.footer__logo-fill {
+  fill: #226b5a;
+}
+
+.footer__nav {
+  gap: 2.5rem;
+  padding: 2rem 0 3rem 0;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer__link {
+  color: #226b5a;
+}
+
+.footer__social-media {
+  gap: 1rem;
 }
