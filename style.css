@@ -353,6 +353,10 @@ h1 {
   .header__navigation {
     padding: 1rem;
   }
+
+  .cherry-orange__half {
+    padding: 15rem 20% 10% 20%;
+  }
 }
 
 @media only screen and (max-width: 980px) {
