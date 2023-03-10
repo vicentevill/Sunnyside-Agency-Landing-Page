@@ -54,16 +54,19 @@ h1 {
   background-size: cover;
   background-position: center center;
   height: 80vh;
+  align-items: center;
 }
 
 .header__navigation {
   justify-content: space-between;
   padding: 1rem 3rem;
   align-items: center;
+  width: 100%;
 }
 
 .header__logo {
   width: 10rem;
+  padding: 0 1rem 0 0;
 }
 
 .header__wrapper {
@@ -83,11 +86,16 @@ h1 {
   color: #12151c;
 }
 
+.header__link.contact:hover {
+  background: #6dcfff;
+  color: white;
+}
+
 .header__heading {
   text-align: center;
   font-size: 3rem;
   color: white;
-  padding: 2rem 0 3rem 0;
+  padding: 2rem 1rem 3rem 1rem;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
 }
@@ -96,6 +104,46 @@ h1 {
   width: 1.5rem;
   align-self: center;
   margin-top: 5rem;
+}
+
+.header__hamburger {
+  position: relative;
+  display: none;
+}
+
+.header__hamburger-icon {
+  cursor: pointer;
+}
+
+.header__nav-mobile {
+  position: absolute;
+  margin: 2rem 0;
+  right: 0rem;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 1rem 2rem;
+  background: white;
+  display: none;
+}
+
+.header__nav-mobile::after {
+  content: "";
+  position: absolute;
+  top: -1.2rem;
+  right: 0;
+  border-top: 24px solid transparent;
+  border-bottom: 24px solid transparent;
+  border-right: 24px solid #fff;
+}
+
+.header__link.mobile {
+  color: #83828a;
+}
+
+.header__link.mobile.contact {
+  background: #fbd700;
+  color: #12151c;
 }
 
 .transform {
@@ -285,6 +333,76 @@ h1 {
   color: #226b5a;
 }
 
+.footer__link:hover {
+  color: white;
+}
+
 .footer__social-media {
   gap: 1rem;
+}
+
+.footer__social-link:hover .footer__social-icon {
+  fill: white;
+}
+
+@media only screen and (max-width: 785px) {
+  .header__heading {
+    font-size: 2rem;
+  }
+
+  .header__navigation {
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .header__hamburger {
+    display: block;
+  }
+
+  .header__link.desktop {
+    display: none;
+  }
+
+  .transform {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .transform__main {
+    text-align: center;
+    align-items: center;
+    padding: 20%;
+  }
+
+  .stand-out {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .stand-out__main {
+    text-align: center;
+    align-items: center;
+    padding: 20%;
+  }
+
+  .cherry-orange {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .testimonials__heading {
+    text-align: center;
+  }
+
+  .testimonials__wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .image-group {
+    grid-template-columns: 1fr 1fr;
+  }
 }
